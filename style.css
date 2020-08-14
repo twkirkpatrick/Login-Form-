@@ -53,12 +53,13 @@ body{
 }
 
 .box input:hover[type = "submit"]{
-    background: #FF00FF;
+    background: springgreen;
     color:black;
 }
 
 .box input[type = "text"]:focus,.box input[type = "password"]:focus{
     width: 280px;
+    border-color: springgreen;
 
 }
 
