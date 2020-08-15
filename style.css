@@ -34,7 +34,8 @@ body{
     width: 200px;
     outline: none;
     color: white;
-    border-radius: 24px;
+	border-radius: 24px;
+	transition: width .25s, border-color .25s;
 }
 
 .box input[type = "submit"]{
@@ -49,7 +50,8 @@ body{
     width: 125px;
     outline: none;
     color: white;
-    border-radius: 25px;
+	border-radius: 25px;
+	transition: color .25s, background .25s;
 }
 
 .box input:hover[type = "submit"]{
@@ -57,11 +59,19 @@ body{
     color:black;
 }
 
-.box input[type = "text"]:focus,.box input[type = "password"]:focus{
-    width: 280px;
-    border-color: springgreen;
 
+
+.box input[type = "text"]:focus,.box input[type = "password"]:focus{
+	width:280px;
+    border-color: springgreen;
 }
+
+
+.box input[type = "text"]:hover,.box input[type = "password"]:hover{
+    border-color: springgreen;
+}
+
+
 
 nav {
     width: 100%;
@@ -117,7 +127,8 @@ nav ul li ul li{
 }
 
 nav ul li ul li a {
-    padding: 8px 14px;
+	padding: 8px 14px;
+	transition: background-color .25s;
 }
 
 nav ul li ul li a:hover {
