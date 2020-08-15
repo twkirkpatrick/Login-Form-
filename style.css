@@ -1,3 +1,10 @@
+/*delete this comment once merged with master. 
+Added CSS styling for image on main page
+Added z-index values to each element. This allows the elements to "layer" properly when screen is not maximized
+(i.e. the drop down menu is visible over the img, the login form is visible over both)
+Created class for image boxes. ID used for that specific image.
+*/
+
 body{
     margin: 0;
     padding: 0;
@@ -14,13 +21,13 @@ body{
     transform: translate(-50%, -50%);
     background: #191919;
     text-align: center;
+    z-index: 3;
 }
 
 .box h1{
     color: white;
     text-transform: uppercase;
-    
-
+    z-index: 3;
 }
 
 .box input[type = "text"],.box input[type = "password"]{
@@ -35,7 +42,8 @@ body{
     outline: none;
     color: white;
 	border-radius: 24px;
-	transition: width .25s, border-color .25s;
+    transition: width .25s, border-color .25s;
+    z-index: 3;
 }
 
 .box input[type = "submit"]{
@@ -51,12 +59,14 @@ body{
     outline: none;
     color: white;
 	border-radius: 25px;
-	transition: color .25s, background .25s;
+    transition: color .25s, background .25s;
+    z-index: 3;
 }
 
 .box input:hover[type = "submit"]{
     background: springgreen;
     color:black;
+    z-index: 3;
 }
 
 
@@ -64,20 +74,40 @@ body{
 .box input[type = "text"]:focus,.box input[type = "password"]:focus{
 	width:280px;
     border-color: springgreen;
+    z-index: 3;
 }
 
 
 .box input[type = "text"]:hover,.box input[type = "password"]:hover{
     border-color: springgreen;
+    z-index: 3;
 }
 
-
+.imageBox {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    top: 10px;
+    left: 80px;
+    z-index: 1;
+  }
+  
+  #cloudIslandImg {
+      padding: 1px 1px 1px 1px;
+      float: left;
+      margin: 0;
+      position: relative;
+      border: 1px black;
+      border-radius: 50px;
+      box-shadow: -6px 12px rgb(49, 48, 48);
+  }
 
 nav {
     width: 100%;
     height: 60px;
     background-color: grey;
     font-family: sans-serif;
+    z-index: 2;
 }
 
 nav p {
@@ -87,17 +117,19 @@ nav p {
     line-height: 55p;
     float: left;
     padding: 12px 12px;
-
+    z-index: 2;
 }
 
 nav ul {
     float: left;
+    z-index: 2;
 }
 
 nav ul li {
     float: left;
     list-style: none;
     position: relative;
+    z-index: 2;
 }
 
 nav ul li a {
@@ -107,6 +139,7 @@ nav ul li a {
     font-size: 14px;
     padding: 22px 14px;
     text-decoration: none;
+    z-index: 2;
 }
 
 nav ul li ul {
@@ -115,23 +148,28 @@ nav ul li ul {
     background-color: grey;
     padding: 8px;
     border-radius: 0px 0px 4px 4px;
+    z-index: 2;
 }
 
 nav ul li:hover ul {
     display: block;
+    z-index: 2;
 }
 
 nav ul li ul li{
     width: 180px;
     border-radius: 4px;
+    z-index: 2;
 }
 
 nav ul li ul li a {
 	padding: 8px 14px;
-	transition: background-color .25s;
+    transition: background-color .25s;
+    z-index: 2;
 }
 
 nav ul li ul li a:hover {
     background-color: lightgray;
+    z-index: 2;
 }
 
