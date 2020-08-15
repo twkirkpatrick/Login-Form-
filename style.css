@@ -200,3 +200,32 @@ nav ul li ul li a:hover {
     z-index: 2;
 }
 
+
+
+/* Animated Graident the background */
+/* Used https://www.gradient-animator.com/ */
+/* 	-Alex */
+body {
+	background: linear-gradient(318deg, #004e65, #00560f, #840099, #7b5e00);
+    background-size: 1000% 1000%;
+
+    -webkit-animation: AnimationName 60s ease infinite;
+    -moz-animation: AnimationName 60s ease infinite;
+    animation: AnimationName 60s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:19% 0%}
+    50%{background-position:82% 82%}
+    100%{background-position:19% 0%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:19% 0%}
+    50%{background-position:82% 82%}
+    100%{background-position:19% 0%}
+}
+@keyframes AnimationName {
+    0%{background-position:19% 0%}
+    50%{background-position:82% 82%}
+    100%{background-position:19% 0%}
+}
