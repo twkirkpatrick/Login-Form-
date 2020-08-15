@@ -128,17 +128,14 @@ nav ul {
 nav ul li {
     float: left;
     list-style: none;
-<<<<<<< HEAD
 	position: relative;
 	transition: background-color .25s;
 }
 
 nav ul li:hover {
 	background-color: springgreen;
-=======
     position: relative;
     z-index: 2;
->>>>>>> 27dfe57bde7037d831353b4d1b0207479d266b5a
 }
 
 
