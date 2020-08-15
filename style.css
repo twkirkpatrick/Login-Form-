@@ -12,7 +12,9 @@ body{
     background: #34495e;
 }
 
+
 .box{
+	border-radius: 25px;
     width: 300px;
     padding: 40px;
     position: absolute;
@@ -110,6 +112,14 @@ nav {
     z-index: 2;
 }
 
+#logo {
+	padding-top: 10px;
+	height:40px;
+	padding-left:10px;
+	float: left;
+}
+
+
 nav p {
     font-family: sans-serif;
     color: black;
@@ -122,7 +132,10 @@ nav p {
 
 nav ul {
     float: left;
-    z-index: 2;
+	z-index: 2;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left:20px
 }
 
 nav ul li {
